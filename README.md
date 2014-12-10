@@ -43,7 +43,7 @@ The first thing we need to do is setup the tools required to build and run an ap
 To install KVM on Windows run the following command, which will download and run a script that installs KVM for the current user (requires admin privileges):
 
 ```
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/master/kvminstall.ps1'))"
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/release/kvminstall.ps1'))"
 
 ```
 
@@ -63,7 +63,7 @@ To install KVM and the correct version of Mono on OS X using [Homebrew](http://b
 To install KVM on Linux run the following command:
 
 ```
-curl -sSL https://raw.githubusercontent.com/aspnet/Home/master/kvminstall.sh | sh && source ~/.kre/kvm/kvm.sh
+curl -sSL https://raw.githubusercontent.com/aspnet/Home/release/kvminstall.sh | sh && source ~/.kre/kvm/kvm.sh
 ```
 
 Note that on Linux you need to also install [Mono](http://mono-project.com) 3.4.1 or later.
@@ -78,9 +78,9 @@ This command will download the specified version of the K Runtime Environment (K
 
 The samples in this repo are basic starting points for you to experiment with.
 
-+ [ConsoleApp](https://github.com/aspnet/Home/tree/master/samples/ConsoleApp). This is just basic console app if you want to use it as a starting point.
-+ [HelloWeb](https://github.com/aspnet/Home/tree/master/samples/HelloWeb). This is a minimal startup class that shows welcome page and static file middleware. This is mostly for you to run through the steps in the readme and make sure you have everything setup and working correctly.
-+ [HelloMvc](https://github.com/aspnet/Home/tree/master/samples/HelloMvc). This sample is a basic MVC app. It is not designed to show all the functionality of the new web stack, but to give you a starting point to play with features.
++ [ConsoleApp](https://github.com/aspnet/Home/tree/release/samples/ConsoleApp). This is just basic console app if you want to use it as a starting point.
++ [HelloWeb](https://github.com/aspnet/Home/tree/release/samples/HelloWeb). This is a minimal startup class that shows welcome page and static file middleware. This is mostly for you to run through the steps in the readme and make sure you have everything setup and working correctly.
++ [HelloMvc](https://github.com/aspnet/Home/tree/release/samples/HelloMvc). This sample is a basic MVC app. It is not designed to show all the functionality of the new web stack, but to give you a starting point to play with features.
 + [MVC Music Store](https://github.com/aspnet/MusicStore) and [BugTracker](https://github.com/aspnet/BugTracker) are application samples that are both being ported to ASP.NET vNext. Each of these samples have their own separate repositories that you can look at.
 
 ### Running the samples
@@ -138,4 +138,4 @@ A description of all the repos is [here](https://github.com/aspnet/Home/wiki/Rep
 
 ## Feedback
 
-Check out the [contributing](https://github.com/aspnet/Home/blob/master/CONTRIBUTING.md) page to see the best places to log issues and start discussions.
+Check out the [contributing](https://github.com/aspnet/Home/blob/release/CONTRIBUTING.md) page to see the best places to log issues and start discussions.
